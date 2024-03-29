@@ -21,7 +21,7 @@ jobs:
         - run: databricks bundle validate
           env:
             DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_TOKEN }}
-            DATABRICKS_BUNDLE_ENV: dev
+            
           
 
        
@@ -29,4 +29,4 @@ jobs:
         - run: databricks bundle deploy
           env:
             DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_TOKEN }}
-            DATABRICKS_BUNDLE_ENV: dev
+    
